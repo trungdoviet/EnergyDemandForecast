@@ -1,6 +1,5 @@
-# FINAL — Forecasting Taiwan's Monthly Electricity Demand
+# Forecasting Taiwan's Monthly Electricity Demand
 
-**E1407 final project — rubric-compliant submission.**
 
 | | |
 |---|---|
@@ -14,7 +13,7 @@
 ## Files
 
 ```
-FINAL/
+EnergyDemandForecast/
 ├── README.md                    ← this file
 ├── REPORT.md                    ← full ~10-page report (rubric structure)
 ├── notebook.ipynb               ← executed notebook, 0 errors, 37 cells
