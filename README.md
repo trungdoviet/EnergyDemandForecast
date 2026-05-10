@@ -15,7 +15,6 @@
 ```
 EnergyDemandForecast/
 ├── README.md                    ← this file
-├── REPORT.md                    ← full ~10-page report (rubric structure)
 ├── notebook.ipynb               ← executed notebook, 0 errors, 37 cells
 ├── results_summary.csv          ← model comparison table (auto-generated)
 ├── test_predictions.csv         ← per-month test forecasts + errors (auto-generated)
