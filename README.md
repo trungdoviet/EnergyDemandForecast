@@ -49,23 +49,6 @@ jupyter nbconvert --to notebook --execute notebook.ipynb \
                   --ExecutePreprocessor.timeout=300
 ```
 
-## How the notebook maps to the rubric
-
-| Rubric requirement | Notebook section |
-|---|---|
-| Problem framing (target, horizon, regression vs classification, economic relevance) | §1 |
-| At least 2 data types | §3 (three sources: Ember + IMF + NASA POWER) |
-| Time-aware split, no look-ahead | §8 (chronological 80/20 + visualisation) |
-| 1 baseline model | §10 (Lasso) |
-| 1 advanced model | §11 (LightGBM with walk-forward CV) |
-| Justify model selection & compare | §10, §11, §12 |
-| Regression metrics (MAE, RMSE, MAPE) | §9 (helper) and §12 (table) |
-| Feature importance / coefficients | §14 (Lasso coefs + LightGBM gain) |
-| Overfitting assessment | §16.1 (CV vs test comparison) |
-| Structural-break discussion | §16.2 |
-| Ethical implications | §16.4 |
-| Limitations of AI in economics | §16.3 |
-
 ## Headline takeaway
 
 > Lasso wins (MAPE 1.92 %) because monthly national electricity demand is genuinely linear-additive in the engineered features (lag-12 seasonality + cooling-degree temperature + rolling trend). LightGBM is not overfitting — its CV and test errors agree — it is simply the wrong inductive bias for this signal shape. The right model for an economic forecasting task is the one whose inductive bias matches the data-generating process.
